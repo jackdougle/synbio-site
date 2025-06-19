@@ -1,24 +1,33 @@
+import AnimWrapper from "../Transition";
+
 function Contact() {
     return(
-      <>
-        <div class="flex flex-col mx-6 my-2 text-[20px] font-sans font-light">
-          <p class="text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 font-extrabold font-mono">UA iGEM - Contact Us</p>
-          <p class="text-gray-800 text-2xl translate-x-1 font-extrabold font-mono">Apply here</p>
-          <p class="mt-2 mx-2">Thank you for your interest in UA iGEM! Please fill out this form and we'll get back to you as soon as possible.</p>
-          <a href="https://competition.igem.org" class="font-mono mx-2 mb-2 text-lg text-sky-500 hover:text-sky-400 transition duration-300">Click me &rarr;</a>
-          <p class="text-gray-800 text-2xl translate-x-1 font-extrabold font-mono">Reach out with any questions</p>
-          <p class="m-2">UA iGEM is always looking for suggestions, advice, and new ideas to consider. If you have any ideas on how we can improve, or are hosting a research event, we'd love to talk! Also, if you have any questions regarding donations, the application process, or our current research, don't hesitate to reach out.</p>
-          <p class="mx-2">Our email: <strong class="text-sky-500 font-mono text-lg">igem@arizona.edu</strong></p><br />
-          <div class="grid place-items-center -mt-6 mb-4 font-sans font-extralight">
-            <form class="flex flex-col gap-3 w-210 text-black text-[19px]" action="https://formsubmit.co/jackgdouglass@arizona.edu" method="POST">
-                <strong class="font-mono font-normal">Name</strong> <input type="text" name="name" class="border-2 border-black rounded-xl p-3 w-full -mt-2 bg-gradient-to-br from-white to-green-50" required />
-                <strong class="font-mono font-normal">Email</strong> <input type="email" name="email" class="border-2 border-black rounded-xl p-3 -mt-2 bg-gradient-to-br from-white to-green-50" required />
-                <strong class="font-mono font-normal">Message</strong> <textarea type="text" name="message" class="border-2 border-black rounded-xl p-3 min-h-75 -mt-2 bg-gradient-to-br from-white to-green-50" required />
-                <input type="submit" value="Send" class="text-white bg-gradient-to-tl from-purple-300 to-green-400 rounded-xl p-3 hover:scale-102 transition duration-300 text-xl mt-1 font-mono" />
+      <AnimWrapper>
+        <div className="flex flex-col ml-6 mr-12 my-2 text-[20px] font-sans font-light">
+          <p className="text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 -mb-6 font-extrabold font-mono">UA iGEM - Contact Us</p>
+          <div id="apply">
+            <p className="text-gray-800 text-2xl translate-x-1 mt-2 font-extrabold font-mono">Apply here</p>
+            <p className="mx-2 mt-1">Thank you for your interest in UA iGEM! Please fill out this form and we'll get back to you as soon as possible.</p>
+            <a href="https://competition.igem.org" className="font-mono font-bold mx-2 mb-2 text-lg text-sky-500 hover:text-sky-300 transition duration-300">Application form &rarr;</a>
+          </div>
+          <div id="apply" className="my-5">
+            <p id="donate" className="text-gray-800 text-2xl translate-x-1 font-extrabold font-mono">Sponsors & Donations</p>
+            <p className="mx-2 mt-1">If you'd like to collaborate with us for an event or sponsor our research, please reach out! If you'd like to donate, you can do with the link below. Thank you for your support!</p>
+            <a href="https://competition.igem.org" className="font-mono font-bold mx-2 text-lg text-sky-500 hover:text-sky-300 transition duration-300">Our PayPal &rarr;</a>
+          </div>
+          <p className="text-gray-800 text-2xl translate-x-1 font-extrabold font-mono">Reach out with any questions</p>
+          <p className="mx-2 mt-1">UA iGEM is always looking for suggestions, advice, and new ideas to consider. If you have any ideas on how we can improve, or are hosting a research event, we'd love to talk! Also, if you have any questions regarding donations, the application process, or our current research, don't hesitate to reach out.</p>
+          <p className="m-2 mt-2">Our email: <strong className="text-sky-500 font-mono font-bold text-lg hover:text-sky-300 transition duration-300">igem@arizona.edu</strong></p><br />
+          <div className="grid place-items-center -mt-6 mb-4 font-sans font-normal">
+            <form className="flex flex-col gap-3 w-210 text-black text-[20px]" action="https://formsubmit.co/e8b819c9bf64cfb7361f1ee556a165a4" method="POST">
+              <strong className="font-mono font-normal text-[16px]">Name</strong> <input type="text" name="name" className="border-2 border-black rounded-lg p-3 w-full -mt-2 bg-gradient-to-br from-whit via-white to-green-50" required />
+              <strong className="font-mono font-normal text-[16px]">Email</strong> <input type="email" name="email" className="border-2 border-black rounded-lg p-3 -mt-2 bg-gradient-to-br from-white via-white to-green-50" required />
+              <strong className="font-mono font-normal text-[16px]">Message</strong> <textarea type="text" name="message" className="border-2 border-black rounded-lg p-3 min-h-75 -mt-2 bg-gradient-to-br from-white via-white to-green-50" required />
+              <input type="submit" value="Send" className="text-white bg-gradient-to-tl from-purple-300 to-green-400 rounded-lg p-3 hover:scale-102 transition duration-300 text-xl mt-1 font-mono" />
             </form>
          </div>
         </div>
-      </>
+      </AnimWrapper>
     )
 }
 

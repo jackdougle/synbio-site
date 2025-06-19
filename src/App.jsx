@@ -1,48 +1,49 @@
-import { BrowserRouter, Link, Routes, Route } from "react-router"
+import { Routes, Route, useLocation } from "react-router-dom"
+import { AnimatePresence } from "framer-motion"
+import ScrollToTop from "./ScrollToTop.jsx"
 
 import NavBar from "./Navbar.jsx"
 import News from "./pages/News.jsx"
 
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
-import Apply from "./pages/Apply.jsx"
 
 import Projects from "./pages/Projects.jsx"
-import MolecularThesaurus from './pages/projects/MT.jsx'
+import MolThesaurus from './pages/projects/MolThesaurus.jsx'
 import RustKTD from './pages/projects/RustKTD.jsx'
-import One from './pages/projects/YearOne.jsx'
+import Placeholder from './pages/projects/iGEM2026.jsx'
 
-import Donate from "./pages/Donate.jsx"
 import Contact from "./pages/Contact.jsx"
 import Journal from "./pages/Journal.jsx"
 
 function App() {
+    const location = useLocation()
+
     return (
-    <div class="relative grid grid-cols-[320px_auto] min-h-screen w-screen overflow-hidden">
+    <div className="relative grid grid-cols-[320px_auto] min-h-screen w-screen overflow-hidden">
+      <ScrollToTop />
       <NavBar />
-      <div class="col-start-2 overflow-y-scroll bg-white">
+      <div className="col-start-2 overflow-y-scroll bg-white w-full">
         <News />
-        <BrowserRouter>
-            <Routes>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
 
             <Route path="projects">
                 <Route index element={<Projects />} />
-                <Route path="molecularthesaurus" element={<MolecularThesaurus />} />
-                <Route path="rustktd" element={<RustKTD />} />
-                <Route path="2026" element={<One />} />
+                <Route path="molecular-thesaurus" element={<MolThesaurus />} />
+                <Route path="rust-ktd" element={<RustKTD />} />
+                <Route path="igem-2026" element={<Placeholder />} />
             </Route>
 
-            <Route path="apply" element={<Apply />} />
-            <Route path="donate" element={<Donate />} />
             <Route path="contact" element={<Contact />} />
 
             <Route path="journal" >
-                <Route index element={<Journal />} />
+            <Route index element={<Journal />} />
             </Route>
-            </Routes>
-        </BrowserRouter>
+          </Routes>
+        </AnimatePresence>
       </div>
     </div>
     );
