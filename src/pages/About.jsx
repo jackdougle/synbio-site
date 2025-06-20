@@ -17,7 +17,7 @@ function About() {
                 <img src="me.png" className="h-135 object-cover min-h-80 w-80 border-4 rounded-[80px]" />
                 <div className="flex flex-col text-black h-40 justify-center items-center">
                     <p className="font-bold font-mono">Jack Douglass - Co-founder</p>
-                    <p className="font-mono text-[15px] text-center">Jack is sophomore studying biology and computer science. He intends to go into pandemic prevention research. In his free time, he loves coding, reading manga, and exploring nature.</p>
+                    <p className="font-mono text-[15px] text-center">Jack is a sophomore studying biology and computer science. He intends to go into pandemic prevention research. In his free time, he loves coding, reading manga, and exploring nature.</p>
                 </div>
             </div>
             <div className="flex flex-col max-h-100 w-87 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
