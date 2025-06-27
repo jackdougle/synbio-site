@@ -4,7 +4,7 @@ function About() {
     return(
       <AnimWrapper>
         <div className="flex flex-col font-mono bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent my-2 mx-6 mr-6">
-          <p className="text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 font-bold">UA iGEM - Our Team</p>
+          <p className="text-[35px] md:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 font-bold">UA iGEM - Our Team</p>
           <p className="text-gray-800 text-2xl translate-x-1 font-bold">Why we're here</p>
           <div className="m-2 text-[20px] font-extralight font-sans text-black">
             <p>UA iGEM (founded 2025) is a new club at the University of Arizona. Our mission is to move medicine and synthetic biology forward through pursuing novel pathways. Our members come from a wide variety of majors and interests, but have a shared goal of finding ways to leverage UA's great research background to build new and impactful technologies.</p>

@@ -4,7 +4,7 @@ function Contact() {
     return(
       <AnimWrapper>
         <div className="flex flex-col ml-6 mr-12 my-2 text-[20px] font-sans font-light">
-          <p className="text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 -mb-6 font-extrabold font-mono">UA iGEM - Contact Us</p>
+          <p className="text-[35px] md:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 -mb-6 font-extrabold font-mono">UA iGEM - Contact Us</p>
           <div id="apply">
             <p className="text-gray-800 text-2xl translate-x-1 mt-2 font-extrabold font-mono">Apply here</p>
             <p className="mx-2 mt-1">Thank you for your interest in UA iGEM! Please fill out this form and we'll get back to you as soon as possible.</p>
