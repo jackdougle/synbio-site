@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 function NavBar() {
     return (
-      <div className="fixed left-0 top-0 text-white h-screen w-[320px] flex flex-col justify-center items-center align-middle bg-gradient-to-br from-green-400 to-purple-400 p-3">
+      <div className="fixed left-0 top-0 text-white h-screen w-[320px] hidden md:flex flex-col justify-center items-center align-middle bg-gradient-to-br from-green-400 to-purple-400 p-3">
         <div className="text-white h-full w-full flex flex-col justify-between gap-12 p-8 bg-gradient-to-br from-green-500 to-purple-400">
           <div className="text-[40px] font-mono font-bold">
             <Link to="/">
@@ -29,7 +29,7 @@ function NavBar() {
               </li>
               <div className="flex flex-col -mt-5 ml-6 text-[15px]">
                 <Link to="/projects/molecular-thesaurus" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Molecular Thesaurus</Link>
-                <Link to="/projects/rust-ktd" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Rust KTD</Link>
+                <Link to="/projects/rust-kd" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Rust KTD</Link>
                 <Link to="/projects/igem-2026" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- iGEM 2025-2026</Link>
               </div>
               <li className="flex">

@@ -1,10 +1,10 @@
 import AnimWrapper from "../../Transition";
 
-function RustKTD() {
+function RustKD() {
     return(
     <AnimWrapper>
       <div className="flex flex-col font-mono bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent my-2 mx-6 mr-6">
-        <p className="text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 font-bold">Rust K-mer Trimmer/De-duper</p>
+        <p className="text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 font-bold">Rust K-mer Decontaminator</p>
         <p className="text-gray-800 text-2xl translate-x-1 font-bold">Speeding up metagenomic pre-processing using Rust</p>
       </div>
       <div className="max-w-full justify-center items-center">
@@ -17,4 +17,4 @@ function RustKTD() {
     );
 }
 
-export default RustKTD;
+export default RustKD;
