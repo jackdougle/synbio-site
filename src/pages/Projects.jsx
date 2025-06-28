@@ -10,7 +10,7 @@ function Projects() {
         </div>
         <div className="max-w-full flex flex-wrap justify-around mx-10 my-8 gap-15">
             <Link to="/projects/molecular-thesaurus" className="flex flex-col min-h-100 min-w-85 bg-black rounded-4xl border-5 border-black transition duration-200 hover:scale-102">
-                <img src="mitosis.jpg" className="rounded-4xl border-4 border-black h-135 object-contain"/>
+                <img src="mitosis.jpg" className="rounded-4xl border-4 border-black h-135 object-cover"/>
                 <div className="flex flex-col text-black border-4 border-black rounded-4xl bg-white h-40 justify-center items-center px-2">
                     <p className="font-bold font-mono">MolecularThesaurus.com</p>
                     <p className="font-mono text-[15px] text-center">Finding bioactive molecular data can be challenging, so we made a cheminformatics/python website tailored to our diverse and experimental needs.</p>
