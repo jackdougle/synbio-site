@@ -1,0 +1,25 @@
+arr = [2, 3, 4, 5, 6]
+
+for num in arr:
+	print(num)
+
+def rec(arr):
+	if len(arr) == 0:
+		return("Done")
+	print(arr[0])
+	return(rec(arr[1:]))
+
+[2, 3, ...]
+2
+[3, 4, ...]
+3
+[4, 5, 6]
+4
+[5, 6]
+5
+[6]
+6
+[]
+Done
+
+nuts nuts
