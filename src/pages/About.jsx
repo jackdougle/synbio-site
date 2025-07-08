@@ -11,7 +11,7 @@ function About() {
             <p>UA iGEM (founded 2025) is a new club at the University of Arizona. Our mission is to move medicine and synthetic biology forward through pursuing novel pathways. Our members come from a wide variety of majors and interests, but have a shared goal of finding ways to leverage UA's great research background to build new and impactful technologies.</p>
             <p className="my-2">As a prospective iGEM team, we hope to display our research at the Grand Jamboree in 2026. Travel, reagents, equipment, and team fees are expensive so donations are much appreciated!</p>
           </div>
-          <p className="text-gray-800 text-2xl translate-x-1 font-bold">We're builing, now!</p>
+          <p className="text-gray-800 text-2xl translate-x-1 font-bold">We're building, now!</p>
           <div className="m-2 mb-4 text-[20px] font-extralight font-sans text-black">
             <p>The University of Arizona has participated in iGEM only one time, and that was in 2006. We're trying to build a new team that will last for years to come and leverage UA's great research experience and resources.</p>
             <p className="my-2">However, this is a new club and construction has just begun. If you'd like to help, please apply here! We're looking for motivated students curious about any of these roles: ethics, outreach, wet-lab work, computer modeling/simulations, and project management.</p>
