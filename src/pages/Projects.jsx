@@ -23,7 +23,7 @@ function Projects() {
                     <p className="font-mono text-[15px] text-center">Early pandemic detection is crucial. With RustKTD, we're trying to improve software to facilitate faster pre-processing of metagenomic data.</p>
                 </div>
             </Link>
-            <Link to="/projects/igem-2026" className="flex flex-col min-h-100 min-w-85 bg-black rounded-4xl border-5 border-black transition duration-200 hover:scale-102">
+            <Link to="https://sassy-lycra-c0a.notion.site/Project-Ideas-1fa272b0424380438c7ecac26570b5f3" className="flex flex-col min-h-100 min-w-85 bg-black rounded-4xl border-5 border-black transition duration-200 hover:scale-102">
                 <img src="brains.jpg" className="rounded-4xl border-4 border-black h-135 object-cover"/>
                 <div className="flex flex-col text-black border-4 border-black rounded-4xl bg-white h-40 justify-center items-center px-2 ">
                     <p className="font-bold font-mono">2025-2026 iGEM Project</p>
