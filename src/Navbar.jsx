@@ -30,7 +30,7 @@ function NavBar() {
               <div className="flex flex-col -mt-5 ml-6 text-[15px]">
                 <Link to="/projects/molecular-thesaurus" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Molecular Thesaurus</Link>
                 <Link to="/projects/rust-kd" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Rust KTD</Link>
-                <Link to="/projects/igem-2026" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- iGEM 2025-2026</Link>
+                <Link to="https://sassy-lycra-c0a.notion.site/Project-Ideas-1fa272b0424380438c7ecac26570b5f3" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- iGEM 2025-2026</Link>
               </div>
               <li className="flex">
                 <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
