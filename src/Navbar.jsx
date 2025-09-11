@@ -8,7 +8,7 @@ function NavBar() {
         <div className="text-white h-full w-full flex flex-col justify-between gap-12 p-8 bg-gradient-to-br from-green-500 to-purple-400">
           <div className="text-[40px] font-mono font-bold">
             <Link to="/">
-                <img src="/logo.png" className="scale-115 mb-5 -mt-3 hover:scale-120 transition duration-300" alt="UA iGEM Logo"  />
+                <img src="/logo_red_blue.png" className="scale-115 mb-3 -mt-3 hover:scale-120 transition duration-300" alt="UA iGEM Logo"  />
             </Link>
             <ul className="space-y-4 -ml-2">
               <li className="flex">
