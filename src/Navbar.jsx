@@ -28,8 +28,8 @@ function NavBar() {
                 <Link to="/projects" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">Projects</Link>
               </li>
               <div className="flex flex-col -mt-5 ml-6 text-[15px]">
-                <Link to="/projects/molecular-thesaurus" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Molecular Thesaurus</Link>
-                <Link to="/projects/rust-kd" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Rust KTD</Link>
+                <Link to="https://github.com/jackdougle/molecular-thesaurus" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Molecular Thesaurus</Link>
+                <Link to="https://github.com/jackdougle/nuclease" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- Nuclease</Link>
                 <Link to="https://alluring-crest-869.notion.site/Project-Ideas-iGEM-2026-27ad4b0ba94c801580faeb5b5ca8dd90" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-purple-100">- iGEM 2025-2026</Link>
               </div>
               <li className="flex">
