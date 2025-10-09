@@ -61,7 +61,7 @@ function NavBar() {
               <img src="/instagram.png" className="w-[30px] h-[30px] object-cover ml-3 filter invert transition hover:scale-120" alt="Instagram" onClick={() => window.location.href = 'https://instagram.com/uaigem/'} />
               <img src="/linkedin.png" className="w-[30px] h-[30px] object-cover ml-3 filter invert transition hover:scale-120" alt="LinkedIn" onClick={() => window.location.href = 'https://linkedin.com/company/uaigem/'} />
             </div>
-            <p className="text-xs font-mono justify-start">© UA iGEM 2025</p>
+            <p className="text-xs font-mono justify-start">© UA SynBio Society 2025</p>
           </div>
         </div>
       </div>
