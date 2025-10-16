@@ -19,28 +19,49 @@ function About() {
             <HashLink smooth to="/contact#apply" className="font-mono font-bold text-lg text text-sky-500 hover:text-sky-300 transition duration-300">Apply &rarr;</HashLink>
             <p className="mt-2">If you're interested in science communication, we'd love to publish your writing in our idea journal! Our idea journal is our initiative to shine light on novel scientific topics, communicate what we learn, and create discussions around synthetic biology and emerging tech at UArizona.</p>
           </div>
-          <p className="text-gray-800 text-2xl translate-x-1 font-bold">Get to know our officers</p>
+          <p className="text-gray-800 text-2xl translate-x-1 font-bold">Get to know our organizers</p>
         </div>
-        <div className="max-w-full flex flex-row flex-wrap justify-around my-4 mb-28">
-          <div className="flex flex-col max-h-100 w-87 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
-                <img src="me.png" className="h-135 object-cover min-h-80 w-80 border-2 rounded-full" />
+        <div className="max-w-full flex flex-row flex-wrap justify-around my-4">
+          <div className="flex flex-col w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="me.png" className="object-cover h-80 w-80 border-2 rounded-full" />
                 <div className="flex flex-col text-black h-40 justify-center items-center">
                     <p className="font-bold font-mono">Jack Douglass - Co-founder</p>
-                    <p className="font-sans font-light text-[18px] text-center">Jack is a sophomore studying biology and computer science. He intends to go into pandemic prevention research. In his free time, he loves coding, reading manga, and exploring nature.</p>
+                    <p className="font-sans font-light text-[18px] text-center">Jack is a junior studying biology and computer science. He intends to go into pandemic prevention research. In his free time, he loves coding, reading manga, and exploring nature.</p>
                 </div>
             </div>
-            <div className="flex flex-col max-h-100 w-87 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
-                <img src="hendrick.jpeg" className="h-135 object-cover min-h-80 w-80 border-2 rounded-full" />
+            <div className="flex flex-col w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="hendrick.jpeg" className="h-80 object-cover w-80 border-2 rounded-full" />
                 <div className="flex flex-col text-black h-40 justify-center items-center">
                     <p className="font-bold font-mono">Hendrick Read - Co-founder</p>
-                    <p className="font-sans font-light text-[18px] text-center">Hendrick is a second year majoring in applied biotechnology. He's super interested in tissue engineering, and works as a manufacturing rep for GT Resources. He loves origami!</p>
+                    <p className="font-sans font-light text-[18px] text-center">Hendrick is a third-year majoring in applied biotechnology. He's super interested in tissue engineering, and works as a manufacturing rep for GT Resources. He loves origami!</p>
                 </div>
             </div>
-            <div className="flex flex-col max-h-100 w-87 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
-                <img src="mac.png" className="h-135 object-cover min-h-80 w-80 border-2 rounded-full" />
+            <div className="flex flex-col max-h-100 w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="mac.png" className="h-80 object-cover w-80 border-2 rounded-full" />
                 <div className="flex flex-col text-black h-40 justify-center items-center">
                     <p className="font-bold font-mono">Mac Rodriguez - Optics Lead</p>
-                    <p className="font-sans font-light text-[18px] text-center">Mac is a rising junior studying optical engineering. When he's not doing research in Dongkyun Kang's lab, he's woodworking, restoring vehicles, or thrifting across Tucson.</p>
+                    <p className="font-sans font-light text-[18px] text-center">Mac is a junior studying optical engineering. When he's not doing research in Dongkyun Kang's lab, he's woodworking, restoring vehicles, or thrifting across Tucson.</p>
+                </div>
+            </div>
+          <div className="flex flex-col w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="max.png" className="object-cover h-80 w-80 border-2 rounded-full" />
+                <div className="flex flex-col text-black h-40 justify-center items-center">
+                    <p className="font-bold font-mono">Max Chou - Secretary</p>
+                    <p className="font-sans font-light text-[18px] text-center">Max is a junior studying medicine & physiology. While not conducting genetics and immunology research in the Schlenke Lab, he loves to read, climb, play videogames, and spend time with his dog.</p>
+                </div>
+            </div>
+            <div className="flex flex-col w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="leo.png" className="h-80 object-cover w-80 border-2 rounded-full" />
+                <div className="flex flex-col text-black h-40 justify-center items-center">
+                    <p className="font-bold font-mono">Leo Edgin - Officer</p>
+                    <p className="font-sans font-light text-[18px] text-center">Leo is studying biomedical engineering and biochemistry, with the desire achieve a PhD in tissue engineering. Outside of classes, Leo is making biomedical devices, working on personal projects, or watching movies.</p>
+                </div>
+            </div>
+            <div className="flex flex-col max-h-100 w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="eva.png" className="h-80 object-cover w-80 border-2 rounded-full" />
+                <div className="flex flex-col text-black h-40 justify-center items-center">
+                    <p className="font-bold font-mono">Eva Santisteban - Social Media</p>
+                    <p className="font-sans font-light text-[18px] text-center">Eva is a second year studying microbiology and applied biotechnology. When not doing research with the Baltrus lab, she’s slinging coffees at Dutch Bro’s, at a concert or a basketball game, or learning a new recipe!.</p>
                 </div>
             </div>
         </div>
