@@ -61,7 +61,21 @@ function About() {
                 <img src="eva.png" className="h-80 object-cover w-80 border-2 rounded-full" />
                 <div className="flex flex-col text-black h-40 justify-center items-center">
                     <p className="font-bold font-mono">Eva Santisteban - Social Media</p>
-                    <p className="font-sans font-light text-[18px] text-center">Eva is a second year studying microbiology and applied biotechnology. When not doing research with the Baltrus lab, she’s slinging coffees at Dutch Bro’s, at a concert or a basketball game, or learning a new recipe!.</p>
+                    <p className="font-sans font-light text-[18px] text-center">Eva is a second year studying microbiology and applied biotechnology. When not doing research with the Baltrus lab, she’s slinging coffees at Dutch Bro’s, at a concert or a basketball game, or learning a new recipe!</p>
+                </div>
+            </div>
+            <div className="flex flex-col max-h-100 w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="adri.png" className="h-80 object-cover w-80 border-2 rounded-full" />
+                <div className="flex flex-col text-black h-40 justify-center items-center">
+                    <p className="font-bold font-mono">Adrian De La Pena - Chemist</p>
+                    <p className="font-sans font-light text-[18px] text-center">Adrian is an undergraduate research assistant in Biochemistry and Pharmaceutical Sciences who currently works in peptide drug discovery. He loves climbing and good music.</p>
+                </div>
+            </div>
+            <div className="flex flex-col max-h-100 w-87 h-130 transition duration-200 hover:scale-102 rounded-2xl place-items-center gap-3">
+                <img src="dar.png" className="h-80 object-cover w-80 border-2 rounded-full" />
+                <div className="flex flex-col text-black h-40 justify-center items-center">
+                    <p className="font-bold font-mono">Darius Gharavi - Article</p>
+                    <p className="font-sans font-light text-[18px] text-center">Darius is a junior studying neuroscience and cognitive science, with a special interest in political neuroscience. He enjoys long walks, dancing, and drawing in his spare time.</p>
                 </div>
             </div>
         </div>
