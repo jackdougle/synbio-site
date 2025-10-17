@@ -38,10 +38,7 @@ function App() {
             </Route>
 
             <Route path="contact" element={<Contact />} />
-
-            <Route path="journal" >
-            <Route index element={<Journal />} />
-            </Route>
+            <Route path="journal" element={<Journal />} />
           </Routes>
         </AnimatePresence>
       </div>

@@ -37,13 +37,6 @@ function About() {
                 </div>
             </div>
             <div className="flex flex-col w-90 transition duration-200 transform hover:scale-105 rounded-2xl items-center gap-3 p-4">
-                <img src="mac.png" className="block h-80 object-cover w-90 border-2 rounded-full" />
-                <div className="flex flex-col text-black justify-center items-center">
-                    <p className="font-bold font-mono">Mac Rodriguez 🔬 Optics Lead</p>
-                    <p className="font-sans font-light text-[18px] text-center">Mac is a junior studying optical engineering. When he's not doing research in Dongkyun Kang's lab, he's woodworking, restoring vehicles, or thrifting across Tucson.</p>
-                </div>
-            </div>
-          <div className="flex flex-col w-90 transition duration-200 transform hover:scale-105 rounded-2xl items-center gap-3 p-4">
                 <img src="max.png" className="block object-cover h-80 w-90 border-2 rounded-full" />
                 <div className="flex flex-col text-black justify-center items-center">
                     <p className="font-bold font-mono">Max Chou 💊 Secretary</p>
@@ -55,6 +48,13 @@ function About() {
                 <div className="flex flex-col text-black justify-center items-center">
                     <p className="font-bold font-mono">Leo Edgin 🦾 Officer</p>
                     <p className="font-sans font-light text-[18px] text-center">Leo is studying biomedical engineering and biochemistry, with the desire achieve a PhD in tissue engineering. Outside of classes, Leo is making biomedical devices, working on personal projects, or watching movies.</p>
+                </div>
+            </div>
+            <div className="flex flex-col w-90 transition duration-200 transform hover:scale-105 rounded-2xl items-center gap-3 p-4">
+                <img src="mac.png" className="block h-80 object-cover w-90 border-2 rounded-full" />
+                <div className="flex flex-col text-black justify-center items-center">
+                    <p className="font-bold font-mono">Mac Rodriguez 🔬 Optics Lead</p>
+                    <p className="font-sans font-light text-[18px] text-center">Mac is a junior studying optical engineering. When he's not doing research in Dongkyun Kang's lab, he's playing basketball, restoring vehicles, or woodworking.</p>
                 </div>
             </div>
             <div className="flex flex-col w-90 transition duration-200 transform hover:scale-105 rounded-2xl items-center gap-3 p-4">

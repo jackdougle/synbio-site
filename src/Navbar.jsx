@@ -4,8 +4,8 @@ import { HashLink } from "react-router-hash-link";
 
 function NavBar() {
     return (
-      <div className="fixed left-0 top-0 text-white h-screen w-[320px] hidden md:flex flex-col justify-center items-center align-middle bg-gradient-to-br from-green-400 to-blue-300 p-3">
-        <div className="text-white h-full w-full flex flex-col justify-between gap-12 p-8 bg-gradient-to-br from-green-500 to-blue-300">
+      <div className="fixed left-0 top-0 text-white h-screen w-[320px] hidden md:flex flex-col justify-center items-center align-middle bg-gradient-to-r from-green-300 to-blue-400 p-3">
+        <div className="text-white h-full w-full flex flex-col justify-between gap-12 p-8 bg-gradient-to-r from-green-400 to-blue-400">
           <div className="text-[40px] font-mono font-bold">
             <Link to="/">
                 <img src="/synbio_logo.png" className="scale-115 mb-3 -mt-3 hover:scale-120 transition duration-300" alt="UA SynBio Logo"  />
@@ -14,16 +14,16 @@ function NavBar() {
               <li className="flex">
                 <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
                   <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
-                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-200" />
-                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-200" />
+                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
                 </svg>
                 <Link to="/about" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">About Us</Link>
               </li>
               <li className="flex">
                 <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
                   <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
-                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-200" />
-                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-200" />
+                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
                 </svg>
                 <Link to="/projects" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">Projects</Link>
               </li>
@@ -35,8 +35,8 @@ function NavBar() {
               <li className="flex">
                 <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
                   <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
-                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-200" />
-                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-200" />
+                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
                 </svg>
                 <Link to="/contact" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">Contact</Link>
               </li>
@@ -47,8 +47,8 @@ function NavBar() {
               <li className="flex">
                 <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
                   <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
-                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-200" />
-                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-200" />
+                  <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                  <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
                 </svg>
                 <Link to="/journal" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">Journal</Link>
               </li>
