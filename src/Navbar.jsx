@@ -18,43 +18,67 @@ function NavBar() {
       }
     }, [open]);
 
-    const MenuLinks = () => (
+    const MenuLinks = ({ onLinkClick = () => {} }) => (
       <>
-        <div className="text-[40px] font-mono font-bold">
+        <div className="text-[40px] font-mono font-bold justify-between">
           <Link to="/">
-              <img src="/synbio_logo.png" className="scale-115 mb-3 -mt-3 hover:scale-120 transition duration-300 max-w-58" alt="UA SynBio Logo"  />
+              <img src="/synbio_logo.png" onClick={onLinkClick} className="scale-115 mb-3 -mt-3 hover:scale-120 transition duration-300 max-w-58" alt="UA SynBio Logo"  />
           </Link>
-          <ul className="space-y-4 -ml-2">
-            <li className="flex">
-              <Link to="/about" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">About Us</Link>
+          <ul className="flex flex-col gap-1 justify-start">
+            <li className="w-full flex justify-center transition duration-200 hover:scale-105 hover:translate-x-2">
+              <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
+                <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
+                <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
+              </svg>
+              <Link to="/about" onClick={onLinkClick} className="block w-[85vw] max-w-[680px] text-white px-4 rounded-md">About Us</Link>
             </li>
-            <li className="flex">
-              <Link to="/projects" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">Projects</Link>
+            <li className="w-full flex justify-center  transition duration-200 hover:scale-105 hover:translate-x-2">
+              <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
+                <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
+                <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
+              </svg>
+              <Link to="/projects" onClick={onLinkClick} className="block w-[85vw] max-w-[680px] text-white px-4 -mb-3 rounded-md">Projects</Link>
             </li>
-            <div className="flex flex-col -mt-5 ml-6 text-[15px]">
-              <a href="https://github.com/jackdougle/molecular-thesaurus" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">- Molecular Thesaurus</a>
-              <a href="https://github.com/jackdougle/nuclease" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">- Nuclease</a>
-              <a href="https://alluring-crest-869.notion.site/Project-Ideas-iGEM-2026-27ad4b0ba94c801580faeb5b5ca8dd90" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">- iGEM 2025-2026</a>
-            </div>
-            <li className="flex">
-              <Link to="/contact" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">Contact</Link>
+            <li className="w-full flex justify-center">
+              <div className="flex flex-col w-[85vw] max-w-[680px] px-4 py-1 text-sm rounded-md">
+                <a href="https://github.com/jackdougle/molecular-thesaurus" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- Molecular Thesaurus</a>
+                <a href="https://github.com/jackdougle/nuclease" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- Nuclease</a>
+                <a href="https://alluring-crest-869.notion.site/Project-Ideas-iGEM-2026-27ad4b0ba94c801580faeb5b5ca8dd90" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- iGEM 2025-2026</a>
+              </div>
             </li>
-            <div className="flex flex-col -mt-6 ml-6 text-[15px]">
-              <HashLink smooth to="/contact#apply" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">- Apply</HashLink>
-              <HashLink smooth to="/contact#donate" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">- Donate</HashLink>
-            </div>
-            <li className="flex">
-              <Link to="/journal" className="ml-4 transition duration-300 hover:translate-x-1 hover:scale-107 hover:text-blue-100">Journal</Link>
+            <li className="w-full flex justify-center transition duration-200 hover:scale-105 hover:translate-x-2">
+              <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
+                <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
+                <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
+              </svg>
+              <Link to="/contact" onClick={onLinkClick} className="block w-[85vw] max-w-[680px] text-white px-4 -mb-3 rounded-md">Contact</Link>
+            </li>
+            <li className="w-full flex justify-center">
+              <div className="flex flex-col w-[85vw] max-w-[680px] px-4 text-sm rounded-md">
+                <HashLink smooth to="/contact#apply" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- Apply</HashLink>
+                <HashLink smooth to="/contact#donate" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- Donate</HashLink>
+              </div>
+            </li>
+            <li className="w-full flex justify-center transition duration-200 hover:scale-105 hover:translate-x-2">
+              <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
+                <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
+                <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
+                <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
+              </svg>
+              <Link to="/journal" onClick={onLinkClick} className="block w-[85vw] max-w-[680px] text-white px-4 rounded-md">Journal</Link>
             </li>
           </ul>
         </div>
         <div>
-          <hr className="my-8 w-100px border-(--pattern-fg)" />
+          <hr className="my-4 w-100px border-white" />
           <div className="flex flex-row">
-            <p className="-mt-1 text-[27px] font-bold font-mono" onClick={() => window.location.href = '/contact'}>Follow Us</p>
-            <img src="/instagram.png" className="w-[30px] h-[30px] object-cover ml-3 filter invert transition hover:scale-120" alt="Instagram" onClick={() => window.location.href = 'https://instagram.com/uasynbio/'} />
+            <p className="text-[27px] text-white font-bold font-mono" onClick={() => window.location.href = '/contact'}>Follow Us</p>
+            <img src="/instagram.png" className="w-[30px] h-[30px] object-cover ml-3 filter invert transition hover:scale-110" alt="Instagram" onClick={() => window.location.href = 'https://instagram.com/uasynbio/'} />
           </div>
-          <p className="text-xs font-mono justify-start">© UA SynBio Society 2025</p>
+          <p className="text-xs text-white font-mono justify-start mb-5">© UA SynBio Society 2025</p>
         </div>
       </>
     );
@@ -62,9 +86,11 @@ function NavBar() {
     return (
       <>
         {/* Desktop sidebar (unchanged) */}
-        <div className="fixed left-0 top-0 text-white h-screen w-[320px] hidden md:flex flex-col justify-center items-center align-middle bg-gradient-to-r from-green-300 to-blue-400 p-3">
-          <div className="text-white h-full w-full flex flex-col justify-between gap-12 p-8 bg-gradient-to-r from-green-400 to-blue-400">
-            <MenuLinks />
+        <div className="fixed left-0 top-0 text-white h-screen w-[320px] hidden md:flex flex-col bg-gradient-to-r from-green-300 to-blue-400 p-3">
+          <div className="text-white h-full w-full gap-8 pt-6 bg-gradient-to-r from-green-400 to-blue-400">
+            <div className="h-full flex flex-col justify-between pl-6">
+              <MenuLinks />
+            </div>
           </div>
         </div>
 
@@ -72,22 +98,25 @@ function NavBar() {
         <button
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen(o => !o)}
-          className="fixed right-3 top-15 z-50 md:hidden p-2 rounded-md bg-white/90 text-red-400"
-        >Menu
+          className={`fixed right-4 top-4 z-50 md:hidden p-2 rounded-md bg-white/90 text-red-400 transform transition-transform duration-300 ${open ? 'rotate-90' : 'rotate-0'}`}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5" cy="12" r="1.8" fill="currentColor" />
+            <circle cx="12" cy="12" r="1.8" fill="currentColor" />
+            <circle cx="19" cy="12" r="1.8" fill="currentColor" />
+          </svg>
         </button>
 
-        {/* Fullscreen overlay menu for mobile */}
-        {open && (
-          <div className="fixed inset-0 z-40 md:hidden bg-gradient-to-b from-blue-500 to-green-300 text-white p-6 overflow-auto">
-            <div className="h-full w-full flex flex-col justify-evenly items-center">
-              <div className="mt-6">
-                <MenuLinks />
-              </div>
-              <div className="text-center">
-              </div>
+        {/* Fullscreen overlay menu for mobile (always mounted to allow smooth transitions) */}
+        <div className={`fixed inset-0 z-40 md:hidden p-6 overflow-auto transition-opacity duration-300 ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-green-300" aria-hidden></div>
+          <div className={`relative h-full w-full transform transition-transform duration-300 ${open ? 'translate-y-0' : '-translate-y-6'}`}>
+            {/* full-height flex container so MenuLinks' bottom block sits at the bottom */}
+            <div className="h-full flex flex-col justify-between px-6">
+              <MenuLinks onLinkClick={() => { if (window.innerWidth < 768) setOpen(false); }} />
             </div>
           </div>
-        )}
+        </div>
       </>
     )
 }
