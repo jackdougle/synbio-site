@@ -6,10 +6,10 @@ function Home() {
     return(
         <AnimWrapper>
           <div className="flex flex-col font-mono bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent font-extrabold mx-6 my-2">
-            <p className="text-[35px] md:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2">UA SynBio Society</p>
+            <p className="text-[40px] sm:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -mt-2">SynBio Society</p>
             <p className="text-gray-800 text-2xl translate-x-1">The new home of iGEM and other emerging biology endeavors at UA</p>
           </div>
-          <div className="relative w-full h-[700px] mt-8 mb-10">
+          <div className="relative w-full h-[700px] mt-8 mb-10 xs:hidden">
             <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
             <img src="/mole.jpg" className="w-full h-[700px] object-cover" alt="Cell Placeholder Image" />
             <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent"></div>

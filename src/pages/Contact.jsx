@@ -4,7 +4,7 @@ function Contact() {
     return(
       <AnimWrapper>
       <div className="flex flex-col ml-6 mr-12 my-2 text-[20px] font-sans font-light">
-        <p className="text-[35px] md:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 font-extrabold font-mono">Contact Us</p>
+        <p className="text-[40px] md:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -my-2 font-extrabold font-mono">Contact Us</p>
         <div id="apply">
         <p className="text-gray-800 text-2xl translate-x-1 mt-2 font-extrabold font-mono">Apply for iGEM</p>
         <p className="mx-2 mt-1">If you'd like to apply to join our 2025-2026 iGEM team, fill out the form below and we'll get back to you as soon as we can. Thank you for your interest!</p>
