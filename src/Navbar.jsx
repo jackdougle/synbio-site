@@ -76,9 +76,9 @@ function NavBar() {
           <hr className="my-4 w-100px border-white" />
           <div className="flex flex-row">
             <p className="text-[27px] text-white font-bold font-mono" onClick={() => window.location.href = '/contact'}>Follow Us</p>
-            <img src="/instagram.png" className="w-[30px] h-[30px] object-cover ml-3 filter invert transition hover:scale-110" alt="Instagram" onClick={() => window.location.href = 'https://instagram.com/uasynbio/'} />
+            <img src="/instagram.png" className="w-[30px] h-[30px] object-cover ml-3 translate-y-1 filter invert transition hover:scale-110" alt="Instagram" onClick={() => window.location.href = 'https://instagram.com/uasynbio/'} />
           </div>
-          <p className="text-xs text-white font-mono justify-start mb-5">© UA SynBio Society 2025</p>
+          <p className="text-xs text-white font-mono justify-start mb-4">© UA SynBio Society 2025</p>
         </div>
       </>
     );
@@ -94,25 +94,24 @@ function NavBar() {
           </div>
         </div>
 
-        {/* Mobile toggle button (visible on small screens) */}
-        <button
-          aria-label={open ? "Close menu" : "Open menu"}
-          onClick={() => setOpen(o => !o)}
-          className={`fixed right-4 top-4 z-50 md:hidden p-2 rounded-md bg-white/90 text-red-400 transform transition-transform duration-300 ${open ? 'rotate-90' : 'rotate-0'}`}
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="5" cy="12" r="1.8" fill="currentColor" />
-            <circle cx="12" cy="12" r="1.8" fill="currentColor" />
-            <circle cx="19" cy="12" r="1.8" fill="currentColor" />
-          </svg>
-        </button>
+        {/* Mobile toggle button (visible on small screens) - hide when overlay is open */}
+        {!open && (
+          <button
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen(o => !o)}
+            className={`fixed right-1.5 top-1.5 z-50 md:hidden rounded-md bg-white/40 text-red-400 transform transition-transform duration-300 ${open ? 'rotate-90' : 'rotate-0'}`}
+          >
+            <img src="/synbio_star.png" className="h-9 w-9"/>
+          </button>
+        )}
 
         {/* Fullscreen overlay menu for mobile (always mounted to allow smooth transitions) */}
         <div className={`fixed inset-0 z-40 md:hidden p-6 overflow-auto transition-opacity duration-300 ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-green-300" aria-hidden></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-400 to-green-200" aria-hidden>
+            <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-green-300 m-3" aria-hidden />
+          </div>
           <div className={`relative h-full w-full transform transition-transform duration-300 ${open ? 'translate-y-0' : '-translate-y-6'}`}>
-            {/* full-height flex container so MenuLinks' bottom block sits at the bottom */}
-            <div className="h-full flex flex-col justify-between px-6">
+            <div className="h-full flex flex-col justify-between pt-5 px-4">
               <MenuLinks onLinkClick={() => { if (window.innerWidth < 768) setOpen(false); }} />
             </div>
           </div>
