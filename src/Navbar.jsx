@@ -77,6 +77,7 @@ function NavBar() {
           <div className="flex flex-row">
             <p className="text-[27px] text-white font-bold font-mono" onClick={() => window.location.href = '/contact'}>Follow Us</p>
             <img src="/instagram.png" className="w-[30px] h-[30px] object-cover ml-3 translate-y-1 filter invert transition hover:scale-110" alt="Instagram" onClick={() => window.location.href = 'https://instagram.com/uasynbio/'} />
+            <img src="/linkedin.png" className="w-[30px] h-[30px] object-cover ml-3 translate-y-1 filter invert transition hover:scale-110" alt="Instagram" onClick={() => window.location.href = 'https://www.linkedin.com/company/ua-synbio-society/'} />
           </div>
           <p className="text-xs text-white font-mono justify-start mb-4">© UA SynBio Society 2025</p>
         </div>

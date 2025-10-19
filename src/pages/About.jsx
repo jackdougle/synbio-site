@@ -92,6 +92,13 @@ function About() {
                     <p className="font-sans font-light text-[18px] text-center">Cole is a junior studing neuroscience, MCB, and biochem! In his free time, he likes discovering new music and has a soft spot for Mesa, Arizona’s homegrown punk scene.</p>
                 </div>
             </div>
+            <div className="flex flex-col w-90 transition duration-200 transform hover:scale-105 rounded-2xl items-center gap-3 p-4">
+                <img src="srishti.png" className="block h-80 object-cover w-90 border-2 rounded-full" />
+                <div className="flex flex-col text-black justify-center items-center">
+                    <p className="font-bold font-mono">Srishti Rajeev ⚙️ Manager</p>
+                    <p className="font-sans font-light text-[18px] text-center">Srishti (Sri) is a junior at the UA majoring in bioinformatics and data science. Outside of her passions in research and policy, she loves playing badminton and hiking!</p>
+                </div>
+            </div>
         </div>
       </AnimWrapper>
     )

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 function News() {
   return (
     <>
-      <div className="w-full h-[50px] overflow-hidden bg-gradient-to-r from-blue-400 via-red-400 to-purple-400 flex items-center">
+      <div className="w-full h-[50px] overflow-hidden bg-gradient-to-r from-blue-400 via-purple-400 to-red-400 flex items-center">
         <motion.div
           className="inline-block whitespace-nowrap"
           animate={{ x: ["100%", "-100%"] }}
