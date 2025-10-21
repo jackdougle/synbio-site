@@ -41,13 +41,6 @@ function NavBar() {
               </svg>
               <Link to="/projects" onClick={onLinkClick} className="block w-[85vw] max-w-[680px] text-white px-4 -mb-3 rounded-md">Projects</Link>
             </li>
-            <li className="w-full flex justify-center">
-              <div className="flex flex-col w-[85vw] max-w-[680px] px-4 py-1 text-sm rounded-md">
-                <a href="https://github.com/jackdougle/molecular-thesaurus" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- Molecular Thesaurus</a>
-                <a href="https://github.com/jackdougle/nuclease" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- Nuclease</a>
-                <a href="https://alluring-crest-869.notion.site/Project-Ideas-iGEM-2026-27ad4b0ba94c801580faeb5b5ca8dd90" onClick={onLinkClick} className="block py-1 text-white transition duration-200 hover:scale-105 hover:translate-x-2">- iGEM 2025-2026</a>
-              </div>
-            </li>
             <li className="w-full flex justify-center transition duration-200 hover:scale-105 hover:translate-x-2">
               <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
                 <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
