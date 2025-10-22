@@ -4,17 +4,11 @@ import ScrollToTop from "./ScrollToTop.jsx"
 
 import NavBar from "./Navbar.jsx"
 import News from "./pages/News.jsx"
-
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
-
 import Projects from "./pages/Projects.jsx"
-import MolThesaurus from './pages/projects/MolThesaurus.jsx'
-import RustKD from './pages/projects/RustKD.jsx'
-import Placeholder from './pages/projects/iGEM2026.jsx'
-
 import Contact from "./pages/Contact.jsx"
-import Journal from "./pages/Journal.jsx"
+import Placeholder from "./pages/Placeholder.jsx"
 
 function App() {
     const location = useLocation()
@@ -32,13 +26,15 @@ function App() {
 
             <Route path="projects">
               <Route index element={<Projects />} />
-              <Route path="molecular-thesaurus" element={<MolThesaurus />} />
-              <Route path="rust-kd" element={<RustKD />} />
+              <Route path="molecular-thesaurus" element={<Placeholder />} />
+              <Route path="nucleaze" element={<Placeholder />} />
               <Route path="igem-2026" element={<Placeholder />} />
             </Route>
 
+            <Route path="igem" element={<Placeholder />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="journal" element={<Journal />} />
+            <Route path="forum" element={<Placeholder />} />
+            <Route path="journal" element={<Placeholder />} />
           </Routes>
         </AnimatePresence>
       </div>
