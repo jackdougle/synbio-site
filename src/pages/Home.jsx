@@ -6,7 +6,7 @@ function Home() {
     return(
         <AnimWrapper>
           <div className="flex flex-col font-mono bg-gradient-to-r from-purple-400 to-green-400 bg-clip-text text-transparent font-extrabold mx-6 my-2">
-            <p className="text-[40px] sm:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -mt-2">SynBio Society</p>
+            <p className="text-[40px] sm:text-[70px] bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent -mt-2">The SynBio Society @ UA</p>
             <p className="text-gray-800 text-2xl translate-x-1">The new home of iGEM and other emerging biology endeavors at UA</p>
           </div>
           <div className="relative w-full h-[700px] mt-8 mb-10 xs:hidden">

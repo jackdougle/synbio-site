@@ -69,14 +69,6 @@ function NavBar() {
                 <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
                 <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
               </svg>
-              <Link to="/forum" onClick={onLinkClick} className="block w-[85vw] max-w-[680px] text-white px-4 rounded-md">Forum</Link>
-            </li>
-            <li className="w-full flex justify-center transition duration-200 hover:scale-105 hover:translate-x-2">
-              <svg className="h-[1lh] w-7 shrink-0 " viewBox="0 0 22 22" fill="none" stroke-linecap="square">
-                <circle cx="11" cy="11" r="11" className="fill-blue-400/25" />
-                <circle cx="11" cy="11" r="10.5" className="stroke-blue-100" />
-                <path d="M8 11.5L10.5 14L14 8" className="stroke-blue-800 dark:stroke-blue-100" />
-              </svg>
               <Link to="/journal" onClick={onLinkClick} className="block w-[85vw] max-w-[680px] text-white px-4 rounded-md">Journal</Link>
             </li>
           </ul>
